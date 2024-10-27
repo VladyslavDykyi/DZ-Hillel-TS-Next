@@ -11,6 +11,6 @@ const product = {
 };
 const alertProduct = (value: Product): string => {
     const availability = value.availability ? 'Так' : 'Ні';
-    return `Товар: ${value.name}, Ціна: ${value.price} грн., В наявності: ${value.availability}.`
+    return `Товар: ${value.name}, Ціна: ${value.price} грн., В наявності: ${availability}.`
 }
 console.log(alertProduct(product));
